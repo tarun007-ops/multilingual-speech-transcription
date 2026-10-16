@@ -46,6 +46,8 @@ MMS uses a 1-billion-parameter checkpoint. Download size, RAM/VRAM, and run time
 
 ## Evaluate transcription quality
 
+![Diagram of reference-based WER and CER evaluation](assets/evaluation-guide.svg)
+
 WER and CER require a trusted reference transcript for every clip. Do not score model output against an unverified or guessed transcript. Copy `data/manifest_template.csv` to `data/manifest.csv`, add your audio filenames, language codes, and checked reference text, then run:
 
 ```bash
