@@ -1,0 +1,6 @@
+torch>=2.2
+transformers>=4.42,<5.0
+accelerate>=0.30
+librosa>=0.10.2
+soundfile>=0.12
+jiwer>=3.0
