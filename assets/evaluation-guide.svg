@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">How transcription evaluation works</title>
+  <desc id="desc">A human-verified reference transcript is compared with model output. Word and character substitutions, deletions, and insertions are counted and normalized to produce WER and CER. No score is valid without a verified reference.</desc>
+  <defs><style>
+    .bg{fill:#fafaf9}.title{font:700 40px Inter,Arial,sans-serif;fill:#111827}.sub{font:18px Inter,Arial,sans-serif;fill:#6b7280}.h{font:650 22px Inter,Arial,sans-serif;fill:#172033}.p{font:16px Inter,Arial,sans-serif;fill:#59616d}.small{font:14px Inter,Arial,sans-serif;fill:#667085}.card{fill:#fff;stroke:#d9dde5;stroke-width:2}.mint{fill:#f0fdf4;stroke:#bbf7d0;stroke-width:2}.indigo{fill:#eef2ff;stroke:#c7d2fe;stroke-width:2}.line{stroke:#8a93a1;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style><marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5L0 11Z" fill="#8a93a1"/></marker></defs>
+  <rect width="1600" height="900" rx="24" class="bg"/>
+  <text class="title" x="80" y="100">Evaluate against verified text</text>
+  <text class="sub" x="80" y="140">Error rates summarize differences; they do not replace listening and transcript review.</text>
+  <rect class="card" x="90" y="230" width="550" height="185" rx="20"/>
+  <text class="h" x="140" y="283">Human-verified reference</text>
+  <rect x="140" y="312" width="450" height="56" rx="12" fill="#f8fafc"/><text class="p" x="165" y="347">Checked words in the correct language</text>
+  <rect class="card" x="90" y="470" width="550" height="185" rx="20"/>
+  <text class="h" x="140" y="523">Model transcript</text>
+  <rect x="140" y="552" width="450" height="56" rx="12" fill="#f8fafc"/><text class="p" x="165" y="587">Whisper Tiny or Wav2Vec2 MMS output</text>
+  <path class="line" d="M640 323C710 323 700 423 750 423"/><path class="line" d="M640 562C710 562 700 455 750 455"/>
+  <rect class="indigo" x="770" y="330" width="300" height="210" rx="22"/>
+  <text class="h" x="920" y="385" text-anchor="middle">Align and count</text>
+  <text class="p" x="920" y="430" text-anchor="middle">Substitutions</text><text class="p" x="920" y="465" text-anchor="middle">Deletions</text><text class="p" x="920" y="500" text-anchor="middle">Insertions</text>
+  <path class="line" d="M1070 435H1150"/>
+  <rect class="mint" x="1170" y="255" width="340" height="160" rx="22"/>
+  <text class="h" x="1340" y="305" text-anchor="middle">WER</text>
+  <text class="p" x="1340" y="350" text-anchor="middle">Word errors ÷ reference words</text>
+  <text class="small" x="1340" y="382" text-anchor="middle">Useful when word boundaries are reliable</text>
+  <rect class="mint" x="1170" y="460" width="340" height="160" rx="22"/>
+  <text class="h" x="1340" y="510" text-anchor="middle">CER</text>
+  <text class="p" x="1340" y="555" text-anchor="middle">Character errors ÷ reference characters</text>
+  <text class="small" x="1340" y="587" text-anchor="middle">Also inspect normalization and script details</text>
+  <rect class="card" x="90" y="730" width="1420" height="88" rx="16"/>
+  <text class="h" x="130" y="783">This project reports no scores until verified reference transcripts are added.</text>
+</svg>
