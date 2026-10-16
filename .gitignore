@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+venv/
+data/audio/
+outputs/
+*.wav
+*.mp3
+*.flac
+*.m4a
